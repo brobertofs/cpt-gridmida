@@ -1,0 +1,431 @@
+*, *:before, *:after {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+.clearfix:before,
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    zoom: 1; /* IE < 8 */
+}
+.pagina {
+    max-width: 1200px;
+	margin: 0 auto;
+	text-align: left;
+}
+.conteudo {
+	width: 100%;
+	background: #fff;
+}
+.linha {}
+.colunas {
+	float: left;
+}
+.lateral {
+	width: 33.33%;
+}
+.principal {
+	width: 66.64%;
+}
+.largura-total {
+	width: 100%;
+}
+.conteudo-coluna {
+	min-height: 1px;
+}
+.margem-total {
+	margin: 15px;
+}
+.padding-total {
+	padding: 15px;
+}
+.padding-esquerda-direita {
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+main, aside, article, section , header{
+	display: block;
+}
+body {
+	font-family: sans-serif;
+	background: #ddd;
+	line-height: 1.5;
+	text-align: center;
+}
+p {
+	margin: 1.3em 0;
+}
+h1 {
+	margin: 0.6em 0;
+}
+a { 
+	text-decoration: none;
+	color: #1e88e5;
+}
+.cabecalho, .rodape {
+	background: #000;
+	color: #fff;
+}
+.cabecalho a, .rodape a {
+	color: #fff;
+}
+.artigos img {
+	max-width: 100%;
+	height: auto;
+}
+/* Paginação */
+.paginacao {
+	padding: 15px 0 ;
+}
+.paginacao .page-numbers {
+	padding: 5px 10px;
+	background: #000;
+	color: #fff;
+}
+.paginacao a.page-numbers:hover {
+	background: #ddd;
+	color: #000;
+}
+.paginacao .current {
+	background: #ddd;
+	color: #000;
+}
+/* Pesquisa */
+.conteudo-pesquisa {
+	text-align: right;
+	padding: 20px 0 0 0;
+}
+.formulario-pesquisa {
+	font-size: 0;
+}
+.input-pesquisa, .submit-pesquisa {
+	display: inline-block;
+	font-size: 14px;
+	line-height: 30px;
+	height: 30px;
+	border: none;
+	font-family: sans-serif;
+	float: right;
+	padding: 0 10px;
+}
+/**
+ * A área de comentários do tema "TwentyFourteen"
+ * com algumas edições necessárias.
+ */
+.comments-area {
+	margin: 30px auto;
+	max-width: 100%;
+	font-size: 12px;
+}
+
+.comments-area textarea {
+	width: 100%;
+}
+
+.comment-body  {
+	border: 1px solid #ddd;
+	background: #f9f9f9;
+	padding: 15px;
+	margin: 15px 0;
+}
+
+.comment-reply-title,
+.comments-title {
+	font: 700 16px/1.5 sans-serif;
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+}
+
+.comment-list {
+	list-style: none;
+	margin: 0 0 30px 0;
+}
+
+.comment-author {
+	font-size: 14px;
+	line-height: 1.7142857142;
+}
+
+.comment-list .reply,
+.comment-metadata {
+	font-size: 10px;
+	text-transform: uppercase;
+}
+
+.comment-reply-link {
+	padding: 5px 10px;
+	color: #fff;
+	display: inline-block;
+	background: #1e88e5;
+}
+
+.comment-author .fn {
+	font-weight: 900;
+}
+
+.comment-list article,
+.comment-list .pingback,
+.comment-list .trackback {
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	margin-bottom: 24px;
+	padding-top: 24px;
+}
+
+.comment-list > li:first-child > article,
+.comment-list > .pingback:first-child,
+.comment-list > .trackback:first-child {
+	border-top: 0;
+}
+
+.comment-author {
+	position: relative;
+}
+
+.comment-author .avatar {
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	height: 18px;
+	padding: 2px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 18px;
+}
+
+.says {
+	display: none;
+}
+
+.comment-author,
+.comment-awaiting-moderation,
+.comment-content,
+.comment-metadata {
+	padding-left: 30px;
+}
+
+.comment-edit-link {
+	margin-left: 10px;
+}
+
+.comment-content {
+	-webkit-hyphens: auto;
+	-moz-hyphens:    auto;
+	-ms-hyphens:     auto;
+	hyphens:         auto;
+	word-wrap: break-word;
+}
+
+.comment-content ul,
+.comment-content ol {
+	margin: 0 0 24px 22px;
+}
+
+.comment-content li > ul,
+.comment-content li > ol {
+	margin-bottom: 0;
+}
+
+.comment-content > :last-child {
+	margin-bottom: 0;
+}
+
+.comment-list .children {
+	list-style: none;
+	margin-left: 15px;
+}
+
+.comment-respond {
+	margin-bottom: 24px;
+	padding: 0;
+}
+
+.comment .comment-respond {
+	margin-top: 24px;
+}
+
+.comment-respond h3 {
+	margin-top: 0;
+	margin-bottom: 24px;
+}
+
+.comment-notes,
+.comment-awaiting-moderation,
+.logged-in-as,
+.no-comments,
+.form-allowed-tags,
+.form-allowed-tags code {
+	color: #767676;
+}
+
+.comment-notes,
+.comment-awaiting-moderation,
+.logged-in-as {
+	font-size: 14px;
+	line-height: 1.7142857142;
+}
+
+.no-comments {
+	font-size: 16px;
+	font-weight: 900;
+	line-height: 1.5;
+	margin-top: 24px;
+	text-transform: uppercase;
+}
+
+.comment-form label {
+	display: block;
+}
+
+.comment-form input[type="text"],
+.comment-form input[type="email"],
+.comment-form input[type="url"] {
+	width: 100%;
+}
+
+.form-allowed-tags,
+.form-allowed-tags code {
+	font-size: 12px;
+	line-height: 1.5;
+}
+
+.required {
+	color: #c0392b;
+}
+
+.comment-reply-title small a {
+	color: #2b2b2b;
+	float: none;
+	overflow: hidden;
+	font-size: 12px;
+	display: block;
+	clear: both;
+}
+
+.comment-navigation {
+	font-size: 12px;
+	line-height: 2;
+	margin-bottom: 48px;
+	text-transform: uppercase;
+}
+
+.comment-navigation .nav-next,
+.comment-navigation .nav-previous {
+	display: inline-block;
+}
+
+.comment-navigation .nav-previous a {
+	margin-right: 10px;
+}
+
+#comment-nav-above {
+	margin: 15px 0;
+}
+
+
+/**
+ * Menu principal
+ */
+ 
+/* Container do menu */
+.main-menu {
+	background: #1e88e5;
+}
+.main-menu a {
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 12px;
+	letter-spacing: 0.02em;
+}
+.main-menu a:hover {
+	background: #4f9ee3;
+}
+
+/* Container dos links do menu - Espaço de 30px para acompanhar o layout */
+.main-menu > ul {
+	margin: 0 30px;
+}
+
+/* Mantém os sub-menus nas posições corretas */
+.main-menu li {
+	position: relative;
+}
+
+.main-menu > ul > li {
+	float: left;
+}
+.main-menu > ul > li > a {
+	display: block;
+	padding: 10px;
+}
+.main-menu > ul > .menu-item-has-children > a {
+	padding: 10px 30px 10px 10px;
+}
+
+/* Adiciona uma seta para baixo nos itens que tem sub-menu */
+.main-menu > ul > .menu-item-has-children > a:after{
+	display: block;
+	content: ' ';
+	border: 5px solid transparent; 
+	border-top-color: #fff;
+	right: 10px;
+	top: 50%;
+	margin-top: -2px;
+	height: 5px;
+	width: 5px;
+	position: absolute;
+	z-index: 9998;
+}
+
+/* Mantém os sub-menus mais abaixo nas posições corretas */
+.menu-item-has-children  {
+	position: relative;
+}
+
+.menu-item-has-children .sub-menu {
+	position: absolute;
+	background: #ddd;
+	min-width: 200px;
+	display: none;
+	z-index: 9999;
+}
+.menu-item-has-children .sub-menu  li {
+	border-bottom: 2px solid #ccc;
+}
+.menu-item-has-children .sub-menu  a {
+	display: block;
+	padding: 10px;
+	color: #555;
+}
+
+/* Sub-menus dentro de sub-menus sempre aparecem ao lado direito */
+.sub-menu .sub-menu {
+	position: absolute;
+	min-width: 200px;
+	left: 100%;
+	top: -0;
+}
+
+/* Não precisamos de javascript para mostra os sub-menus */
+.menu-item-has-children:hover >.sub-menu {
+	display: block;
+}
+.menu-item-has-children:hover >.sub-menu a:hover {
+	background: #eee;
+}
+/* Modelo de página */
+.pagina-largura-maxima {
+	width: 100%;
+}
